@@ -28,19 +28,19 @@ namespace DLC_Checker
             {
                 MyIni.Write("UseCurrentDir", "No", "GameDirectory");
             }
-            UseCurrentDir = MyIni.Read("UseCurrentDir", "GameDirectory");
+            UseCurrentDir = MyIni.Read("UseCurrentDir", "GameDirectory").ToUpper();
 
             if (!MyIni.KeyExists("UpdateListFile", "DLCListFile"))
             {
                 MyIni.Write("UpdateListFile", "Yes", "DLCListFile");
             }
-            UpdateListFile = MyIni.Read("UpdateListFile", "DLCListFile");
+            UpdateListFile = MyIni.Read("UpdateListFile", "DLCListFile").ToUpper();
 
             if (!MyIni.KeyExists("MyDLCListFile", "DLCListFile"))
             {
                 MyIni.Write("MyDLCListFile", "No", "DLCListFile");
             }
-            MyDLCListFile = MyIni.Read("MyDLCListFile", "DLCListFile");
+            MyDLCListFile = MyIni.Read("MyDLCListFile", "DLCListFile").ToUpper();
 
             if (!MyIni.KeyExists("MyURL", "CustomURL"))
             {
@@ -52,14 +52,14 @@ namespace DLC_Checker
             {
                 MyIni.Write("UseMyURL", "No", "CustomURL");
             }
-            UseMyURL = MyIni.Read("UseMyURL", "CustomURL");
+            UseMyURL = MyIni.Read("UseMyURL", "CustomURL").ToUpper();
 
-            if (MyDLCListFile == "Yes")
+            if (MyDLCListFile == "YES")
             {
                 DLC_LIST_PATH = Path.Combine(Directory.GetCurrentDirectory(), MY_DLC_LIST_FILE);
             }
 
-            if (UseMyURL == "Yes")
+            if (UseMyURL == "YES")
             {
                 DLC_URL = MyURL;
             }
