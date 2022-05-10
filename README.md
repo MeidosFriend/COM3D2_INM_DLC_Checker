@@ -1,4 +1,4 @@
-# COM3D2 It's a Night Magic DLC Checker V1.1
+# COM3D2 It's a Night Magic DLC Checker V1.2
 
 This is a special Edition for It's a Night Magic.
 
@@ -36,9 +36,6 @@ The ini file supports several runtime-parameter:
 
 ** COM3D2_INM_DLC_Checker.ini ** 
 
-[GameDirectory]
-UseCurrentDir=No
-
 [DLCListFile]
 UpdateListFile=Yes
 MyDLCListFile=No
@@ -48,10 +45,6 @@ MyURL=https://my.url
 UseMyURL=No
 
 ---------
-UseCurrentDir
-- If set to "No" The game directory is read from the registry (only valid when game is installed) (Default)
-- "Yes" means the current directory is used (only valid if current dir is a game dir)
-
 UpdateListFile
 - If set to "Yes", the actual file COM_EN_NewListDLC.lst is downloaded from Internet, overwriting current file! (Default)
 - If set to "No", the current listfile stays untouched, so you can experiment with your list file
