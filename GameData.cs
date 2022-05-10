@@ -10,7 +10,7 @@ namespace DLC_Checker
         public static readonly string INI_FILE = GAME_NAME + "_DLC_Checker.ini";
         public static readonly string DLC_LIST_FILE = "COM_INM_NewListDLC.lst";
         public static readonly string MY_DLC_LIST_FILE = "MY_COM_INM_NewListDLC.lst";
-        public static readonly string GAME_HEADER = "         " + GAME_NAME + "_Checker Version " + VERSION + "     |   Github.com/MeidosFriend/" + GAME_NAME + "_Checker";
+        public static readonly string GAME_HEADER = "         " + GAME_NAME + "_DLC_Checker Version " + VERSION + "     |   Github.com/MeidosFriend/" + GAME_NAME + "_DLC_Checker";
         public static readonly string GAME_REGISTRY = "HKEY_CURRENT_USER\\" + "SOFTWARE\\SCourt\\CUSTOM ORDER MAID3D 2 It's a Night Magic";
         
         public static string DLC_URL = "https://raw.githubusercontent.com/MeidosFriend/COM3D2_INM_DLC_Checker/master/COM_INM_NewListDLC.lst";
@@ -25,11 +25,11 @@ namespace DLC_Checker
         public GameData()
 		{
             IniFile MyIni = new IniFile();
-            if (!MyIni.KeyExists("UseCurrentDir", "GameDirectory"))
-            {
-                MyIni.Write("UseCurrentDir", "No", "GameDirectory");
-            }
-            UseCurrentDir = MyIni.Read("UseCurrentDir", "GameDirectory").ToUpper();
+            //if (!MyIni.KeyExists("UseCurrentDir", "GameDirectory"))
+            //{
+                //MyIni.Write("UseCurrentDir", "No", "GameDirectory");
+            //}
+            //UseCurrentDir = MyIni.Read("UseCurrentDir", "GameDirectory").ToUpper();
 
             if (!MyIni.KeyExists("UpdateListFile", "DLCListFile"))
             {

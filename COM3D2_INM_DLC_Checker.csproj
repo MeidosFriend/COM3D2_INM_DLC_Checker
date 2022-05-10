@@ -11,8 +11,8 @@
     <StartupObject></StartupObject>
     <AssemblyName>COM3D2_INM_DLC_Checker</AssemblyName>
     <RootNamespace>COM3D2_INM_DLC_Checker</RootNamespace>
-    <Description>Developed on Base of Tankerch's Release</Description>
-    <Version>1.1.0</Version>
+    <Description>Identify missing DLC</Description>
+    <Version>1.2.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
